@@ -18,6 +18,7 @@ class CreateTagsTable extends Migration
             $table->string('tag_name')->nullable();
             $table->integer('category_id')->unsigned();
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
